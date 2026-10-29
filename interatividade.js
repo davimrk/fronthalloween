@@ -30,7 +30,7 @@
         });
     
         if(!atual) {
-            div.innerHTML = `Você finalizou o quiz, sua pontuação foi: ${ponto} `
+            div.innerHTML = `<p>Você finalizou o quiz, sua pontuação foi: <span text-orange-600>${ponto}</span></p>`
             return;
         }
         div.innerHTML = `

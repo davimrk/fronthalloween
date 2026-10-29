@@ -138,7 +138,7 @@ img[src*="ghostfaceeee"] {
 }
 
 img[src*="ravena 2.0"] {
-  object-position: center 10%;
+  object-position: center;
 }
 
 img[src*="marceline"] {
@@ -163,6 +163,7 @@ img[src*="coringa.jpg"] {
 
 img[src*="freddy kruger"] {
   object-position: center 15%;
+  transform: scale(0.);
 }
 
 img[src*="vampiraa"] {
@@ -192,11 +193,11 @@ img[src*="sherek e fiona"] {
 }
 
 img[src*="morticia e gomez"] {
-  object-position: center 10%;
+  object-position: center;
 }
 
 img[src*="casal de vampiros"] {
-  object-position: center 15%;
+  object-position: center;
 }
 
 img[src*="wandinha e enid"] {
@@ -218,7 +219,7 @@ img[src*="harry,hermione e rony"] {
 }
 
 img[src*="as tres bruxas"] {
-  object-position: center 10%;
+  object-position: center;
 }
 
 img[src*="du,dudu e edu"] {
@@ -226,21 +227,21 @@ img[src*="du,dudu e edu"] {
 }
 
 img[src*="tres espias demais"] {
-  object-position: center 15%;
+  object-position: center 30%;
 }
 
 img[src*="trio de faroeste"] {
-  object-position: center 10%;
+  object-position: center 15%;
 }
 
 /* Grupos */
 
 img[src*="turma do scooby-doo"] {
-  object-position: center 15%;
+  object-position: center 25%;
 }
 
 img[src*="tataruga ninja"] {
-  object-position: center 10%;
+  object-position: center 60%;
 }
 
 img[src*="turma do stranger things"] {
@@ -248,15 +249,15 @@ img[src*="turma do stranger things"] {
 }
 
 img[src*="jovens titãs"] {
-  object-position: center 15%;
+  object-position: center 30%;
 }
 
 img[src*="o mágico de oz"] {
-  object-position: center 15%;
+  object-position: center 40%;
 }
 
 img[src*="os caça fantasma"] {
-  object-position: center 10%;
+  object-position: center 40%;
 }
 
 img[src*="monster high"] {
