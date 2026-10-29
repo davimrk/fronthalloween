@@ -4,7 +4,7 @@
     
     async function conexao() {
     try {
-        const resp = await fetch('/api/conexao');
+        const resp = await fetch('https://quiz-halloween-senac-1.onrender.com/api/conexao');
 
         console.log('Status:', resp.status);
 
