@@ -1,0 +1,429 @@
+:root {
+  --cor-primaria: #382c54;
+  --cor-secundaria: #1c142c;
+  --cor-card: #302441;
+  --cor-destaque: #ffa500;
+  --cor-texto: #fffad5;
+  --cor-suave: #b9b1c8;
+
+  --fonte-principal: "DM Sans", sans-serif;
+  --fonte-titulo: "Creepster", cursive;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background: var(--cor-primaria);
+  color: var(--cor-texto);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* NAVBAR */
+
+header {
+  width: 100%;
+  min-height: 83px;
+  padding: 15px 6%;
+  background: var(--cor-secundaria);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  position: relative;
+  z-index: 3;
+}
+
+.company-name {
+  color: var(--cor-destaque);
+  font-family: var(--fonte-titulo);
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar h1 {
+  display: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.links a {
+  color: var(--cor-texto);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: var(--cor-destaque);
+}
+
+/* IMAGEM DE FUNDO */
+
+#foto-fundo {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#foto-fundo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.55;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1400px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding: 70px 8%;
+
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 480px;
+  max-width: 100%;
+}
+
+.content h1 {
+  color: var(--cor-destaque);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(45px, 5vw, 70px);
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.content p {
+  color: var(--cor-texto);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* BOTÕES */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--cor-destaque);
+  border-radius: 25px;
+
+  color: var(--cor-destaque);
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
+
+.btn:hover {
+  background: var(--cor-texto);
+  border-color: var(--cor-texto);
+  color: var(--cor-secundaria);
+}
+
+/* HALLOWEEN PELO MUNDO */
+
+#culturas {
+  position: relative;
+  z-index: 1;
+  background: #21172f;
+  padding: 80px 8%;
+}
+
+#culturas h2 {
+  max-width: 900px;
+  margin: 0 auto 55px;
+
+  color: var(--cor-destaque);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#culturas h3 {
+  max-width: 900px;
+  margin: 35px auto 12px;
+  padding-left: 15px;
+
+  color: var(--cor-destaque);
+  font-size: 24px;
+}
+
+#culturas p {
+  max-width: 900px;
+  margin: 0 auto 28px;
+  padding: 20px 24px;
+
+  background: var(--cor-card);
+  border: 1px solid rgba(255, 165, 0, 0.18);
+  border-radius: 12px;
+
+  color: var(--cor-texto);
+  font-size: 16px;
+  line-height: 1.9;
+
+  transition: 0.3s;
+}
+
+#culturas p:hover {
+  border-color: var(--cor-destaque);
+  transform: translateY(-3px);
+}
+
+/* TRADIÇÕES E CURIOSIDADES */
+
+#tradicoes {
+  position: relative;
+  z-index: 1;
+  background: var(--cor-primaria);
+  padding: 80px 8%;
+}
+
+#tradicoes h2 {
+  max-width: 900px;
+  margin: 0 auto 45px;
+
+  color: var(--cor-destaque);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: normal;
+  text-align: center;
+}
+
+#tradicoes p {
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 25px 28px;
+
+  background: var(--cor-secundaria);
+  border-radius: 0 12px 12px 0;
+
+  color: var(--cor-texto);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* RODAPÉ */
+
+footer {
+  position: relative;
+  z-index: 1;
+
+  background: #170f21;
+  color: var(--cor-suave);
+
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #foto-fundo {
+    top: 0;
+    height: 100%;
+    max-height: 850px;
+  }
+
+  main {
+    min-height: 650px;
+    padding: 60px 6%;
+  }
+
+  .content {
+    width: 450px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  header {
+    padding: 22px 15px;
+  }
+
+  .company-name {
+    font-size: 36px;
+  }
+
+  .links {
+    gap: 12px 15px;
+  }
+
+  .links a {
+    font-size: 11px;
+  }
+
+  #foto-fundo {
+    top: 0;
+    height: 100%;
+    max-height: 850px;
+  }
+
+  #foto-fundo img {
+    object-fit: cover;
+    object-position: 65% center;
+    opacity: 0.25;
+  }
+
+  main {
+    min-height: 600px;
+    padding: 60px 25px;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 46px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .buttons {
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  #culturas,
+  #tradicoes {
+    padding: 55px 6%;
+  }
+
+  #culturas h2,
+  #tradicoes h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+  }
+
+  #culturas h3 {
+    font-size: 21px;
+    margin-top: 30px;
+  }
+
+  #culturas p,
+  #tradicoes p {
+    padding: 18px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  footer {
+    padding: 25px 20px;
+    font-size: 12px;
+  }
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 380px) {
+  .company-name {
+    font-size: 32px;
+  }
+
+  .links a {
+    font-size: 10px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  main {
+    padding: 45px 20px;
+  }
+}

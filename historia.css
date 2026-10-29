@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --cor-primaria: #382c54;
+  --cor-secundaria: #1c142c;
+  --cor-card: #302441;
+  --cor-destaque: #ffa500;
+  --cor-texto: #fffad5;
+  --cor-suave: #b9b1c8;
+
+  --fonte-principal: "Poppins", Arial, sans-serif;
+  --fonte-titulo: "Creepster", "Impact", cursive;
+}
+
+body {
+  margin: 0;
+  margin: 0;
+  font-family: var(--fonte-principal);
+  background: var(--cor-primaria);
+  color: var(--cor-destaque);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- NAV ---------- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 30px;
+  padding: 22px 6%;
+  background: var(--cor-secundaria);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--cor-destaque);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.links a {
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cor-texto);
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: var(--cor-destaque);
+}
+
+/* ---------- CONTEÚDO ---------- */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+#titulo-pagina,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+#titulo-pagina {
+  margin-bottom: 30px;
+}
+
+#titulo-pagina h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+p {
+  max-width: 62ch;
+}
+
+img {
+  display: block;
+  width: 75%;
+  max-height: 420px;
+  object-fit: cover;
+  border: 1px solid var(--cor-texto);
+  border-radius: 24px;
+  box-shadow: 0 0 60px rgba(255, 250, 213, 0.35);
+}
+
+.texto-imagem img {
+  width: 100%;
+}
+
+.texto-imagem {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+section div {
+  flex: 1;
+}
+
+.secao-diferencas {
+  text-align: center;
+}
+
+.secao-diferencas h2 {
+  margin-bottom: 48px;
+}
+
+#origem {
+  background: var(--cor-destaque);
+  color: var(--cor-card);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+article {
+  display: flex;
+  gap: 32px;
+  text-align: left;
+}
+
+article div {
+  padding: 32px;
+  background: var(--cor-card);
+  border: 2px solid var(--cor-destaque);
+  border-radius: 24px;
+}
+
+article div:last-child {
+  background: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
+
+/* ---------- CARROSSEL ---------- */
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px auto;
+  width: 85%;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 650px;
+  max-height: none;
+  border-radius: 10px;
+}
+
+.carrossel button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--cor-card);
+  color: var(--cor-destaque);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carrossel button:hover {
+  background: var(--cor-secundaria);
+}
+
+@media (max-width: 900px) {
+  .texto-imagem {
+    gap: 32px;
+  }
+
+  article {
+    gap: 20px;
+  }
+
+  article div {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .links a {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .texto-imagem {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .inverter {
+    flex-direction: column-reverse;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carrossel {
+    gap: 8px;
+  }
+
+  .carrossel img {
+    height: auto;
+    max-height: 250px;
+  }
+
+  .carrossel button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 18px 15px;
+    gap: 12px;
+  }
+
+  .navbar h1 {
+    font-size: 34px;
+  }
+
+  .links {
+    gap: 4px;
+  }
+
+  .links a {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  main {
+    padding: 30px 16px;
+  }
+
+  #titulo-pagina h1 {
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+  }
+
+  #origem {
+    padding: 16px;
+  }
+
+  article div {
+    padding: 20px;
+  }
+
+  .carrossel {
+    width: 100%;
+    gap: 6px;
+  }
+
+  .carrossel img {
+    min-width: 0;
+  }
+
+  .carrossel button {
+    flex: 0 0 auto;
+    padding: 8px 10px;
+  }
+}

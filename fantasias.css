@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --cor-primaria: #382c54;
+  --cor-secundaria: #1c142c;
+  --cor-card: #302441;
+  --cor-destaque: #ffa500;
+  --cor-texto: #fffad5;
+  --cor-suave: #b9b1c8;
+    --fonte-principal: "DM Sans", sans-serif;
+  --fonte-titulo: "Creepster", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 130px;
+    background-color: #1C142C;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 6%;
+}
+
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #FFA500;
+    margin: 0;
+}
+
+
+nav .links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav .links a {
+    color: #FFFAD5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav .links a:hover {
+    color: #FFA500;
+}
+ 
+
+body {
+  background: var(--cor-primaria);
+  color: var(--cor-texto);
+  font-family: "DM Sans", sans-serif;
+}
+
+/* CONTEÚDO */
+
+main {
+  max-width: 1250px;
+  margin: auto;
+  padding: 70px 30px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-bottom: 90px;
+}
+
+section h2,
+section h3,
+section > h4 {
+  grid-column: 1 / -1;
+  color: var(--cor-destaque);
+  font-family: "Creepster", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* CARDS */
+
+.fantasias {
+  background: var(--cor-card);
+  border: 1px solid #514166;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.fantasias:hover {
+  transform: translateY(-6px);
+  border-color: var(--cor-destaque);
+}
+
+.fantasias img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.fantasias h4 {
+  color: var(--cor-destaque);
+  font-size: 20px;
+  margin: 20px 20px 10px;
+}
+
+.fantasias p {
+  color: var(--cor-suave);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 20px 25px;
+}
+
+/* AJUSTES INDIVIDUAIS DAS IMAGENS */
+
+/* Fantasias individuais */
+
+img[src*="ghostfaceeee"] {
+  object-position: center 15%;
+}
+
+img[src*="ravena 2.0"] {
+  object-position: center 10%;
+}
+
+img[src*="marceline"] {
+  object-position: center 15%;
+}
+
+img[src*="zombi"] {
+  object-position: center 10%;
+}
+
+img[src*="maivis"] {
+  object-position: center 10%;
+}
+
+img[src*="pirataria"] {
+  object-position: center 15%;
+}
+
+img[src*="coringa.jpg"] {
+  object-position: center 10%;
+}
+
+img[src*="freddy kruger"] {
+  object-position: center 15%;
+}
+
+img[src*="vampiraa"] {
+  object-position: center 10%;
+}
+
+img[src*="la casa de papel"] {
+  object-position: center 15%;
+}
+
+img[src*="chucky"] {
+  object-position: center 10%;
+}
+
+/* Duplas */
+
+img[src*="victor e emily"] {
+  object-position: center 15%;
+}
+
+img[src*="coringa e harlequina"] {
+  object-position: center 10%;
+}
+
+img[src*="sherek e fiona"] {
+  object-position: center 15%;
+}
+
+img[src*="morticia e gomez"] {
+  object-position: center 10%;
+}
+
+img[src*="casal de vampiros"] {
+  object-position: center 15%;
+}
+
+img[src*="wandinha e enid"] {
+  object-position: center 10%;
+}
+
+img[src*="jack e sally"] {
+  object-position: center 15%;
+}
+
+/* Trios */
+
+img[src*="meninas superpoderosasss"] {
+  object-position: center 20%;
+}
+
+img[src*="harry,hermione e rony"] {
+  object-position: center 15%;
+}
+
+img[src*="as tres bruxas"] {
+  object-position: center 10%;
+}
+
+img[src*="du,dudu e edu"] {
+  object-position: center;
+}
+
+img[src*="tres espias demais"] {
+  object-position: center 15%;
+}
+
+img[src*="trio de faroeste"] {
+  object-position: center 10%;
+}
+
+/* Grupos */
+
+img[src*="turma do scooby-doo"] {
+  object-position: center 15%;
+}
+
+img[src*="tataruga ninja"] {
+  object-position: center 10%;
+}
+
+img[src*="turma do stranger things"] {
+  object-position: center 20%;
+}
+
+img[src*="jovens titãs"] {
+  object-position: center 15%;
+}
+
+img[src*="o mágico de oz"] {
+  object-position: center 15%;
+}
+
+img[src*="os caça fantasma"] {
+  object-position: center 10%;
+}
+
+img[src*="monster high"] {
+  object-position: center 20%;
+}
+
+img[src*="os 4 viloes do terror"] {
+  object-position: center 15%;
+}
+
+/* SEÇÕES */
+
+.dupla,
+.trio,
+.grupos {
+  border-top: 1px solid #625375;
+  padding-top: 60px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  nav {
+    height: auto;
+    min-height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
+    padding: 20px 5%;
+  }
+
+  nav .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  main {
+    padding: 55px 24px;
+  }
+
+  section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  nav .links {
+    gap: 10px 16px;
+  }
+
+  nav .links a {
+    font-size: 11px;
+  }
+
+  main {
+    padding: 45px 22px;
+  }
+
+  section {
+    margin-bottom: 65px;
+  }
+
+  .fantasias img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 18px 15px;
+  }
+
+  nav h1 {
+    font-size: 36px;
+  }
+
+  nav .links {
+    gap: 9px 12px;
+  }
+
+  nav .links a {
+    font-size: 10px;
+  }
+
+  main {
+    padding: 36px 16px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 55px;
+  }
+
+  section h2,
+  section h3,
+  section > h4 {
+    font-size: clamp(30px, 9vw, 36px);
+    overflow-wrap: anywhere;
+  }
+
+  .fantasias p {
+    font-size: 15px;
+  }
+
+  .fantasias img {
+    height: 260px;
+  }
+
+  .fantasias h4 {
+    font-size: 18px;
+    margin: 16px 16px 8px;
+  }
+
+  .fantasias p {
+    margin: 0 16px 20px;
+  }
+}
